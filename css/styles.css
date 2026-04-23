@@ -196,14 +196,17 @@ img {
   transform: scale(0.98);
 }
 
-.btn--primary {
+.btn--primary,
+a.btn--primary {
   background: linear-gradient(90deg, #5ec4aa, var(--accent-lime));
   color: var(--black);
   box-shadow: 0 4px 24px rgba(115, 208, 185, 0.35);
 }
 
-.btn--primary:hover {
+.btn--primary:hover,
+a.btn--primary:hover {
   opacity: 1;
+  color: var(--black);
   box-shadow: 0 6px 28px rgba(115, 208, 185, 0.5);
 }
 
