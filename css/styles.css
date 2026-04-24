@@ -383,26 +383,6 @@ body.animate-home.is-loaded .hero .hero__grid > * {
   opacity: 1;
 }
 
-/*
- * Pre-hide the animation targets on first paint so there's no flash
- * of content before JS wires up the reveal queue. Gated on html.js so
- * no-JS users still see everything. Selectors MUST mirror what
- * setupHomepageRevealAnimations() in js/main.js later marks as
- * .reveal-item — if those change, update both in the same PR.
- *
- * This rule DOES NOT change the animation timing or stagger — it only
- * sets the starting opacity. The existing .reveal-item transition
- * handles the animate-in; once JS adds .is-visible, content fades up
- * exactly as before.
- */
-html.js main > section:not(.hero) .section__head > *,
-html.js main > section:not(.hero) .cta-banner,
-html.js main .feature-row .feature-row__content > *,
-html.js main .feature-row .role-image-reveal,
-html.js main .steps .step-card {
-  opacity: 0;
-}
-
 body.animate-home .reveal-item {
   opacity: 0;
   transform: translateY(var(--reveal-distance));

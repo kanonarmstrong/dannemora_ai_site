@@ -3,17 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--
-      Mark <html> as JS-enabled synchronously, before any paint. Paired with
-      the `html.js .reveal-target-initial { opacity: 0 }` rule in styles.css,
-      this prevents the flash-of-unstyled-content where animation targets
-      would render at full opacity briefly before the JS runtime inserts
-      them into its reveal queue. Must stay at the top of <head> (before
-      the main stylesheet link) for the class to be present on first paint.
-      If JS is disabled, the class never gets added and content renders
-      normally without any animation gating.
-    -->
-    <script>document.documentElement.classList.add('js');</script>
     <title>dannemora — Ship features while you sleep</title>
     <meta
       name="description"
