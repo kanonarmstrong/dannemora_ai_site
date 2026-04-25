@@ -6,6 +6,12 @@
     <meta name="robots" content="noindex,nofollow" />
     <title>dannemora — Private Preview</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       body {
         background: #0a0e1a;
@@ -23,10 +29,23 @@
         text-align: center;
         line-height: 1.6;
       }
-      h1 {
-        font-size: 1.75rem;
-        margin: 0 0 0.5rem;
-        font-weight: 600;
+      /* Logo — mirrors site-header .logo from the full home page */
+      .logo {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.625rem;
+        font-family: "Red Hat Display", system-ui, sans-serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: #ffffff;
+        margin-bottom: 0.75rem;
+      }
+      .logo__mark {
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #0091bd, #73d0b9);
+        opacity: 0.95;
       }
       p {
         color: #9ba3b4;
@@ -42,7 +61,10 @@
   </head>
   <body>
     <main class="card">
-      <h1>dannemora</h1>
+      <div class="logo">
+        <span class="logo__mark" aria-hidden="true"></span>
+        dannemora
+      </div>
       <p>Private preview. Public launch coming soon.</p>
       <p>Contact: <a href="mailto:support@dannemora.ai">support@dannemora.ai</a></p>
     </main>
